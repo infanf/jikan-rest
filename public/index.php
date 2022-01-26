@@ -32,6 +32,7 @@ if (!env('APP_DEBUG')) {
     header("Access-Control-Allow-Origin: " . env('APP_CORS'));
 } else {
     header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Methods: GET");
 }
 
 $app->run();
